@@ -1,0 +1,21 @@
+# 对于多余10个的参数，写法为${10}，若写成$10则会被当作$1后面加上0
+echo $# arguments passed
+echo arg 1 = :$1: arg 2 = :$2: arg 3 = :$3:
+
+echo Number of arguments passed is $#
+
+# 遍历参数并打印
+for arg in "$@"
+do
+	echo $arg
+done
+	echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+# 自动遍历所有参数的简便写法
+#
+
+for arg
+do
+	echo $arg
+done
+	echo "--------------------------------"
